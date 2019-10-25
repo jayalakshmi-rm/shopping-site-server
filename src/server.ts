@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.set("port", process.env.PORT || 3000);
-app.use('/product/product', productApp);
+app.use('/product', productApp);
 app.listen(app.get('port'), ()=> {
     console.log('server listening to ', app.get('port'));
 })
