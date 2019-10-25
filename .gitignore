@@ -1,0 +1,13 @@
+# ignore the node_modules folder
+
+/node_modules/**/*
+
+/dist/**/*
+
+/app/config/config.js
+
+package-lock.json
+
+/logs/**/*
+config.js
+core.ignoreCase = false
