@@ -13,7 +13,7 @@ export interface IProductModel extends mongoose.Document {
     productDescription: string; // Mandatory
     productSizes: Array<string>; // Mandatory
     productImagePath: string; // Mandatory
-    prodcutCategory: string;
+    productCategory: string;
 }
 
 let schema = new Schema({
@@ -45,7 +45,7 @@ productSizes: {
  type: Array,
  required: true
 },
-prodcutCategory: {
+productCategory: {
  type: String,
  required: true
 },
