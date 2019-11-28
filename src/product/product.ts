@@ -1,6 +1,7 @@
 import express = require('express');
-export const productApp = express();
 import {ProductSchemaModel, IProductModel} from '../schema/product.schema';
+
+export const productApp = express();
 
 productApp.get('/productlist', (req, res) => {
     ProductSchemaModel.find({}, (err, productList) => {
