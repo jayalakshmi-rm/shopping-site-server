@@ -22,8 +22,8 @@ app.listen(app.get('port'), ()=> {
     console.log('server listening to ', app.get('port'));
 })
 
-let uri = 'mongodb://localhost:27017/shoppingSiteDB';
-mongoose.connect(uri, (err: any) => {
+let url = 'mongodb://localhost:27017/shoppingSiteDB';
+mongoose.connect(url, (err: any) => {
   if (err) {
     console.log(err.message);
     console.log(err);
